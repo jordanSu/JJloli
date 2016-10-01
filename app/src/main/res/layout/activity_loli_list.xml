@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.jj.jjloli.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="120dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView1" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@mipmap/ic_launcher"
+                            android:layout_weight="1"
+                            android:id="@+id/imageButton1" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                app:fabSize="mini"
+                                android:src="@android:drawable/ic_menu_edit"
+                                android:layout_margin="@dimen/fab_margin"
+                                app:backgroundTint="@color/colorPrimary"/>
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|start"
+                                app:fabSize="mini"
+                                android:src="@android:drawable/ic_menu_delete"
+                                android:layout_margin="@dimen/fab_margin"
+                                app:backgroundTint="@color/colorAccent"/>
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView2" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@mipmap/ic_launcher"
+                            android:layout_weight="1"
+                            android:id="@+id/imageButton2" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                app:fabSize="mini"
+                                android:src="@android:drawable/ic_menu_edit"
+                                android:layout_margin="@dimen/fab_margin"
+                                app:backgroundTint="@color/colorPrimary"/>
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|start"
+                                app:fabSize="mini"
+                                android:src="@android:drawable/ic_menu_delete"
+                                android:layout_margin="@dimen/fab_margin"
+                                app:backgroundTint="@color/colorAccent"/>
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView3" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/ic_launcher"
+                        android:layout_weight="1"
+                        android:id="@+id/imageButton3" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_menu_edit"
+                            android:layout_margin="@dimen/fab_margin"
+                            app:backgroundTint="@color/colorPrimary"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|start"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_menu_delete"
+                            android:layout_margin="@dimen/fab_margin"
+                            app:backgroundTint="@color/colorAccent"/>
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            </TableRow>
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView4" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@mipmap/ic_launcher"
+                            android:layout_weight="1"
+                            android:id="@+id/imageButton4" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                app:fabSize="mini"
+                                android:src="@android:drawable/ic_menu_edit"
+                                android:layout_margin="@dimen/fab_margin"
+                                app:backgroundTint="@color/colorPrimary"/>
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|start"
+                                app:fabSize="mini"
+                                android:src="@android:drawable/ic_menu_delete"
+                                android:layout_margin="@dimen/fab_margin"
+                                app:backgroundTint="@color/colorAccent"/>
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+
+                </LinearLayout><LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView5" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/ic_launcher"
+                        android:layout_weight="1"
+                        android:id="@+id/imageButton5" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_menu_edit"
+                            android:layout_margin="@dimen/fab_margin"
+                            app:backgroundTint="@color/colorPrimary"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|start"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_menu_delete"
+                            android:layout_margin="@dimen/fab_margin"
+                            app:backgroundTint="@color/colorAccent"/>
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout><LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView6" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/ic_launcher"
+                        android:layout_weight="1"
+                        android:id="@+id/imageButton6" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_menu_edit"
+                            android:layout_margin="@dimen/fab_margin"
+                            app:backgroundTint="@color/colorPrimary"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|start"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_menu_delete"
+                            android:layout_margin="@dimen/fab_margin"
+                            app:backgroundTint="@color/colorAccent"/>
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="230dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Edit" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
