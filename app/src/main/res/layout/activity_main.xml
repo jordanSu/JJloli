@@ -9,9 +9,81 @@
     android:focusableInTouchMode="true"
     android:fitsSystemWindows="true">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="80dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <ProgressBar
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+                    android:id="@+id/progressBar"
+                    android:layout_height="20dp"
+                    android:layout_width="100dp"
+                    android:scaleY="3" />
+            </LinearLayout>
+            <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="280dp" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:color/transparent"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:backgroundTint="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:text="打扮"/>
+            </FrameLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="你好呀"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/message"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8" />
+            </LinearLayout>
+        </LinearLayout>
 
         <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
@@ -24,27 +96,72 @@
                 android:layout_height="wrap_content"
                 android:theme="@style/AppTheme.AppBarOverlay">
 
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:background="?attr/colorPrimary"
-                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="                    " />
+
+                    <Button
+                        android:text="All character"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/charactersButton"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="          " />
+                    <Button
+                        android:text="Store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/storeButton"
+                        android:layout_weight="1" />
+
+                </android.support.v7.widget.Toolbar>
 
             </android.support.design.widget.AppBarLayout>
-            
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab"
+            <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="@dimen/fab_margin"
-                app:srcCompat="@android:drawable/ic_dialog_email" />
+                android:layout_gravity="bottom|end">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:color/transparent"
+                    android:layout_margin="@dimen/fab_margin" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:text="記"/>
+            </FrameLayout>
+
 
         </android.support.design.widget.CoordinatorLayout>
     </RelativeLayout>
-
 
     <RelativeLayout
         android:layout_width="240dp"
