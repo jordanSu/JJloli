@@ -21,8 +21,17 @@
         <activity
             android:name=".loliList"
             android:label="@string/title_activity_loli_list"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="com.example.jj.jjloli.MainActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".store"
+            android:label="@string/title_activity_store"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".editTitle"
+            android:label="@string/title_activity_edit_title"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

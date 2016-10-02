@@ -14,7 +14,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
@@ -22,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
     private ListView mDrawerList;
     private Toolbar mToolbar;
     private FloatingActionButton loliButton;
+    private Button storeButton;
     private String[] listContent = {"後宮養成計畫", "分類設定", "統計", "About"};
+    private Boolean isFirst = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +40,37 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, loliList.class);
-                startActivity(intent);
+                startActivityForResult(intent,0);
             }
         });
+
+        storeButton = (Button) findViewById(R.id.storeButton);
+        storeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, store.class);
+                startActivityForResult(intent,0);
+            }
+        });
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ImageView mainLoli = (ImageView) findViewById(R.id.mainLoli);
+        if (isFirst) {
+            mainLoli.setImageResource(R.mipmap.evo_hackathon_chac03);
+            isFirst = false;
+        }
+        else
+            mainLoli.setImageResource(R.mipmap.evo_hackathon_chac01);
+
+        ImageView littleHead = (ImageView) findViewById(R.id.littleHead);
+        littleHead.setImageResource(R.mipmap.evo_hackathon_little);
+
+
+        RelativeLayout allScreen = (RelativeLayout) findViewById(R.id.allScreen);
+        allScreen.setBackgroundResource(R.mipmap.evo_hackathon_bg);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         //mDrawerLayout.setScrimColor(Color.parseColor("#00FFFFFF"));
@@ -69,6 +101,13 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout.addDrawerListener(mDrawerToggle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        ImageView mainLoli = (ImageView) findViewById(R.id.mainLoli);
+        mainLoli.setImageResource(R.mipmap.evo_hackathon_chac01);
     }
 
     @Override

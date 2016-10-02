@@ -363,7 +363,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Edit" />
+                android:text="Edit"
+                android:id="@+id/editbutton" />
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>

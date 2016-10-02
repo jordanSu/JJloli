@@ -4,4 +4,6 @@
     <string name="drawer_open">Hello</string>
     <string name="drawer_close">Close</string>
     <string name="title_activity_loli_list">loliList</string>
+    <string name="title_activity_store">store</string>
+    <string name="title_activity_edit_title">editTitle</string>
 </resources>
