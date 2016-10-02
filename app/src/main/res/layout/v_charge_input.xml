@@ -9,10 +9,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/money"
-        android:text="99999999"
+        android:text="0"
         android:textSize="60sp"
         android:layout_weight="0.46"
-        android:textAlignment="center"
+        android:textAlignment="viewEnd"
         android:gravity="center_vertical" />
 
     <LinearLayout
@@ -37,12 +37,12 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Note"
             android:ems="10"
             android:id="@+id/detail"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:hint="吃土豆" />
 
     </LinearLayout>
 
